@@ -1,9 +1,9 @@
-# Documentacion proyecto LagunaLink
-Documentacion del Proyecto de Final de Grado Superior de DAW
+# Memoria TFG LagunaLink
+Documentación del Trabajo Final de Grado Superior de DAW para el IES LAGUNA DE JOATZEL.
 
-1. INTRODUCCIÓN 
-    - 1.1. Motivación 
-    - 1.2. Planteamiento técnico 
+ [1. INTRODUCCIÓN](#!doc/1.INTRODUCCION.md "Introducción")  
+- 1.1. Motivación   
+- 1.2. Planteamiento técnico 
 
 2. ESPECIFICACIÓN DE REQUISITOS 
     - 2.1. Introducción
@@ -48,7 +48,7 @@ Documentacion del Proyecto de Final de Grado Superior de DAW
 
 6. PRUEBAS
 
-    - 6.1. Descripcion
+    - 6.1. Descripción
     - 6.2. Pruebas unitarias
     - 6.3. Pruebas de integración
     - 6.4. Pruebas de aceptación
