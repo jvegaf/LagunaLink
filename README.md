@@ -1,29 +1,31 @@
-# LagunaLink
     
+
+<p align="center">
+<img src="assets/app_logo.png"/>
+</p><br /><br /><br />
+
+<h1 align="center">LagunaLink</h1>
+<h3 align="center">
 Proyecto Final de Grado Superior de DAW para el IES LAGUNA DE JOATZEL.
+</h3><br /><br /><br /><br />
 
-![Logo de la aplicacion](assets/app_logo.png?raw=true)
-
-- [LagunaLink](#lagunalink)
 - [INTRODUCCIÓN](#introducción)
-  - [MOTIVACIÓN](#motivación)
-  - [OBJETIVO DESCRIPCION Y ALCANCE](#objetivo-descripcion-y-alcance)
-- [ANALISIS](#analisis)
-  - [CASOS DE USO](#casos-de-uso)
-  - [REQUISITOS](#requisitos)
-    - [REQUISITOS FUNCIONALES](#requisitos-funcionales)
-    - [REQUISITOS NO FUNCIONALES](#requisitos-no-funcionales)
-- [DISEÑO](#diseño)
-  - [DEFINICIÓN DEL SISTEMA](#definición-del-sistema)
-  - [DOMAIN-DRIVEN DESIGN](#domain-driven-design)
-  - [CAPAS DE LA ARQUITECTURA](#capas-de-la-arquitectura)
-  - [NUESTRO MODELO DE DOMINIO](#nuestro-modelo-de-dominio)
-  - [CAPA DE APLICACIÓN](#capa-de-aplicación)
-  - [CAPA DE INFRAESTRUCTURA](#capa-de-infraestructura)
-- [IMPLEMENTACIÓN](#implementación)
-  - [CICLO DE VIDA DE UNA PETICIÓN](#ciclo-de-vida-de-una-petición)
-- [PRUEBAS](#pruebas)
-  - [SISTEMA DE PRUEBAS](#sistema-de-pruebas)
+  - [MOTIVACIÓN 🔥](#motivación-)
+  - [OBJETIVO DESCRIPCION Y ALCANCE 🎯](#objetivo-descripcion-y-alcance-)
+- [ANALISIS 🔎](#analisis-)
+  - [CASOS DE USO 🧑‍💻](#casos-de-uso-)
+  - [REQUISITOS 👌](#requisitos-)
+- [DISEÑO 📐](#diseño-)
+  - [DEFINICIÓN DEL SISTEMA 📌](#definición-del-sistema-)
+  - [DOMAIN-DRIVEN DESIGN 🎯](#domain-driven-design-)
+  - [CAPAS DE LA ARQUITECTURA 🧅](#capas-de-la-arquitectura-)
+  - [NUESTRO MODELO DE DOMINIO 🚩](#nuestro-modelo-de-dominio-)
+  - [CAPA DE APLICACIÓN 🧵](#capa-de-aplicación-)
+  - [CAPA DE INFRAESTRUCTURA 🧱](#capa-de-infraestructura-)
+- [IMPLEMENTACIÓN 🔨](#implementación-)
+  - [CICLO DE VIDA DE UNA PETICIÓN 🏹](#ciclo-de-vida-de-una-petición-)
+- [PRUEBAS 🧪](#pruebas-)
+  - [SISTEMA DE PRUEBAS 🚧](#sistema-de-pruebas-)
 - [FRONTEND](#frontend)
   - [DISEÑO DE INTERFAZ](#diseño-de-interfaz)
   - [COLORES ELEGIDOS](#colores-elegidos)
@@ -44,8 +46,13 @@ Proyecto Final de Grado Superior de DAW para el IES LAGUNA DE JOATZEL.
   - [FUTURO](#futuro)
 - [BIBLIOGRAFÍA](#bibliografía)
 
-# INTRODUCCIÓN
-## MOTIVACIÓN
+# INTRODUCCIÓN 
+
+</br>
+
+## MOTIVACIÓN 🔥
+
+</br></br>
 
 Durante el primer año del grado de superior de informática, nuestra
 profesora de los módulos de Formación Orientativa Laboral y Empresa e
@@ -55,11 +62,12 @@ los profesores tuvieran que hacer de intermediarios entre los
 Estudiantes y las Empresas que venían al centro a buscar talento y
 ofrecer prácticas.
 
-Por ende, aprovechando la oportunidad que nos brinda el trabajo final
-del grado, nos gustaría crear un medio de interrelación entre Empresas y
-Estudiantes.
-## OBJETIVO DESCRIPCION Y ALCANCE
+Por ende, aprovechando la oportunidad que nos brinda el trabajo final del grado, nos gustaría crear un medio de interrelación entre Empresas y Estudiantes.
 
+</br></br>
+## OBJETIVO DESCRIPCION Y ALCANCE 🎯 
+
+</br></br>
 El objetivo principal del proyecto es crear una aplicación web, que
 sirva de canal de relación entre los Estudiantes del centro y las
 Empresas del mundo laboral.
@@ -93,34 +101,69 @@ posible a un entorno real que nos podríamos llegar a encontrar
 futuramente. Para ello, hemos definido una serie de requisitos no
 funcionales que detallaremos más adelante.
 
-# ANALISIS
+</br></br></br>
+# ANALISIS 🔎
 
-## CASOS DE USO
+</br>
 
-![Diagrama casos de uso](assets/use_cases_diagram.png?raw=true)
+## CASOS DE USO 🧑‍💻
 
-## REQUISITOS
+</br></br>
+<p align="center">
+  <img src="assets/use_cases_diagram.png"/>
+</p>
 
-### REQUISITOS FUNCIONALES
-- Debe ser un sistema cerrado, solo los USUARIOS registrados pueden ver las ofertas publicadas.
-- Debe de existir un registro de tipo ALUMNOS.
-- Debe existir un registro de tipo EMPRESAS.
-- Debe existir algún método de seguridad que compruebe que detrás de una creación de cuenta existe una persona
-- Los ALUMNOS pueden cumplimentar su CURRICULUM.
-- Las EMPRESAS pueden crear OFERTAS de empleo.
-- Tanto ALUMNOS como EMPRESAS pueden ver todas las OFERTAS de empleo publicadas.
-- Los estudiantes pueden APLICAR (inscribirse) en cada OFERTA.
+## REQUISITOS 👌
 
-### REQUISITOS NO FUNCIONALES
-- Todo el código escrito en inglés.
-- Elaboración de código limpio.
-- Aplicación de los principios [SOLID](https://es.wikipedia.org/wiki/SOLID)
-- Desarrollo con metodología agile [( ATDD )](https://www.javiergarzas.com/2015/07/que-es-eso-de-atdd.html)
-- Adopción de los principios de arquitectura limpia mediante patrón [DDD](https://es.wikipedia.org/wiki/Diseño_guiado_por_el_dominio)
-- Integracion Continua CI/CD
+</br></br>
 
-# DISEÑO
-## DEFINICIÓN DEL SISTEMA
+<h3><strong>REQUISITOS FUNCIONALES</strong></h3>
+ 
+
+</br>
+
+    ✅ Debe ser un sistema cerrado, solo los USUARIOS registrados pueden ver las ofertas publicadas.
+
+    ✅ Debe de existir un registro de tipo ALUMNOS.
+
+    ✅ Debe existir un registro de tipo EMPRESAS.
+
+    ✅ Debe existir algún método de seguridad que compruebe que detrás de una creación de cuenta existe una persona
+
+    ✅ Los ALUMNOS pueden cumplimentar su CURRICULUM.
+
+    ✅ Las EMPRESAS pueden crear OFERTAS de empleo.
+
+    ✅ Tanto ALUMNOS como EMPRESAS pueden ver todas las OFERTAS de empleo publicadas.
+
+    ✅ Los estudiantes pueden APLICAR (inscribirse) en cada OFERTA.
+
+</br>
+
+<h3><strong>REQUISITOS NO FUNCIONALES</strong></h3>
+
+</br>
+
+    ✅ Todo el código escrito en inglés.
+
+    ✅ Elaboración de código limpio.
+
+    ✅ Aplicación de los principios SOLID
+  
+    ✅ Desarrollo con metodología agile ATDD
+
+    ✅ Adopción de los principios de arquitectura limpia mediante patrón DDD
+  
+    ✅ Integracion Continua CI/CD
+
+</br></br></br>
+
+# DISEÑO 📐
+</br></br>
+
+## DEFINICIÓN DEL SISTEMA 📌
+
+</br>
 
 Teniendo en cuenta todos los requisitos anteriormente citados, y con el
 fin de aumentar nuestro conocimiento ,hemos tomado la decisión de
@@ -137,13 +180,20 @@ API la hemos generado apoyándonos en el módulo de Swagger que hay para
 ExpressJS (framework de NodeJS) y se puede probar/consultar en
 [<span class="underline">https://lagunalink-be.herokuapp.com/docs</span>](https://lagunalink-be.herokuapp.com/docs)
 
-![Documentacion de la api](assets/api_doc.png)
+</br></br>
+
+<p align="center">
+  <img src="assets/api_doc.png"/>
+</p>
 
 Para la persistencia de datos hemos elegido MongoDB como gestor de base
 de datos, solo por el mero hecho de descubrir algo diferente al
 tradicional sistema relacional de SQL.
 
-## DOMAIN-DRIVEN DESIGN
+</br></br></br>
+## DOMAIN-DRIVEN DESIGN 🎯
+
+</br></br>
 
 > Se trata de un conjunto de prácticas, técnicas, herramientas y
 > enfoques para dar respuesta a las necesidades complejas en el
@@ -151,6 +201,8 @@ tradicional sistema relacional de SQL.
 > sus objetivos. Pone el foco en el problema relevante y básicamente
 > ayuda a identificar la arquitectura e informar sobre los mecanismos
 > que el software necesita replicar.
+
+</br></br>
 
 La importante necesidad de entender el negocio y su complejidad con una
 comunicación intensa y directa con los expertos de dominio mediante un
@@ -162,15 +214,20 @@ que generamos.
 DDD se divide en dos grandes grupos en los que cada cual existen pautas
 a seguir para el buen desempeño: el estratégico y el táctico.
 
-![ddd](assets/ddd.png?raw=true)
+
+<p align="center">
+  <img src="assets/ddd.png"/>
+</p>
 
 Resumiéndolo mucho, podemos decir que la parte estratégica es la más teórica, y la parte táctica es la más práctica.
 
 Debido a que nuestro proyecto es demasiado pequeño, decidimos hacer la
 aproximación por la parte táctica, la cual tiene los siguientes
 conceptos clave:
+</br></br>
 
-**VALUE OBJECT:**
+**VALUE OBJECT:** 📎
+</br>
 
 Es el objeto más pequeño que existe dentro del sistema. Están concebidos
 para **cuantificar o describir un concepto** de nuestra capa de dominio.
@@ -183,8 +240,9 @@ ejemplo, el color azul), por lo cual, cuando en una entidad cambia ese
 valor, se destruye ese VO y se genera otro nuevo. Al ser objetos tan
 simples, el impacto de la creación/destrucción en el ***performance***
 es mínimo. Las comparaciones entre VO son por valor y no por referencia.
+</br></br>
 
-**ENTIDAD:**
+**ENTIDAD:** 🙋‍♂️
 
 Son objetos que **tienen identidad**, normalmente un
 [<span class="underline">GUID</span>](https://www.espaciobim.com/guid),
@@ -194,15 +252,18 @@ mismos valores de atributos, no son iguales, sino que la identidad es
 quien los identifica como el mismo objeto. Las entidades son capaces de
 ser buscadas, almacenadas y recuperadas. Hay que tener en cuenta que
 según el contexto, una entidad representa algo particular del mismo.
+</br></br>
 
-**AGREGADO:**
+**AGREGADO:** 📦
 
 Son grupos de entidades y value objects que se relacionan entre sí y
 donde se define la dependencia entre ellas. En dichos agregados hay que
 definir cuál es la Entidad padre (Aggregate root) y cuál es la frontera,
 es decir, definir qué está dentro del agregado y qué no.
+</br></br>
 
-**REPOSITORIOS:**
+**REPOSITORIOS:** 🗄️
+</br>
 
 Son los elementos que se encargan de persistir y recuperar los agregados
 que necesitamos que pervivan en el tiempo. Como mínimo debe existir un
@@ -210,56 +271,83 @@ repositorio por cada agregado. En la capa de dominio, el repositorio
 define el contrato (definido como puerto) que debe implementar el
 repositorio ubicado en la capa de infraestructura (definido como
 adaptador).
+</br></br>
 
-**SERVICIOS:**
-
+**SERVICIOS:** 🧑‍🚒
+</br>
 Son los procesos que realizan determinadas tareas. Pueden existir en la
 capa de dominio (domain services) como en la capa de
 aplicación(application services). Para evitar sobre-complejidad en
 nuestro caso, hemos decidido empujar hacia los aggregate root toda la
 lógica comúnmente asociada a los servicios de dominio. Por cada **caso
 de uso**, tenemos un ***Application Service*** que realiza esa tarea.
+</br></br></br>
+## CAPAS DE LA ARQUITECTURA 🧅
+</br></br>
+<p align="center">
+  <img src="assets/struct_layers.png"/>
+</p>
 
-## CAPAS DE LA ARQUITECTURA
+</br></br></br>
 
-![capas](assets/struct_layers.png?raw=true)
+## NUESTRO MODELO DE DOMINIO 🚩
 
-## NUESTRO MODELO DE DOMINIO
+</br></br></br>
+<p align="center">
+  <img src="assets/domain_model.png"/>
+</p>
+</br></br></br>
 
-![dominio](assets/domain_model.png?raw=true)
-
-## CAPA DE APLICACIÓN
+## CAPA DE APLICACIÓN 🧵
+</br></br>
 
 Es donde reunimos los servicios de aplicación (use
 cases) nombrados con terminaciones verbales (Finder, Creator, Upgrader),
 junto con las declaraciones de los DTO cuyos nombres finalizan en
 Request.
 
-![app layer](assets/student_struct.png)
-![app layer 2](assets/companies_struct.png)
+<p align="center">
+<img src="assets/student_struct.png" />
+<img src="assets/companies_struct.png"/>
+</p>
+</br></br></br>
 
-## CAPA DE INFRAESTRUCTURA
+## CAPA DE INFRAESTRUCTURA 🧱
 
+</br></br>
 En esta parte residen todas implementaciones (adaptadores) de cada uno
 de los interfaces (puertos) que teníamos declarados en la capa de
 dominio.
 
-![inf str](assets/student_struct_infra.png?raw=true)
-
+<p align="center">
+  <img src="assets/student_struct_infra.png"/>
+</p>
+</br>
 Cabe destacar que también disponemos de una zona común
 ([<span class="underline">shared
 kernel</span>](http://ddd.fed.wiki.org/view/shared-kernel)) en el cual
 se aloja toda la lógica compartida por los Agregados
 
-![shared](assets/shared_struct.png?raw=true)
-![shared](assets/shared_struct_2.png?raw=true)
-![shared](assets/shared_struct_3.png?raw=true)
+<p align="center">
+  <img src="assets/shared_struct.png"/>
+  <img src="assets/shared_struct_2.png"/>
+  <img src="assets/shared_struct_3.png"/>
+</p>
+</br></br></br>
 
-# IMPLEMENTACIÓN
+# IMPLEMENTACIÓN 🔨
 
-## CICLO DE VIDA DE UNA PETICIÓN
+</br></br>
 
-![req lifecycle](assets/req_life_cycle.png?raw=true)
+## CICLO DE VIDA DE UNA PETICIÓN 🏹
+
+</br></br>
+
+<p align="center">
+  <img src="assets/req_life_cycle.png"/>
+</p>
+
+</br></br>
 
 En la anterior ilustración podemos observar la **cadena de actores** que
 intervienen en el **ciclo de vida de una petición**. El bloque amarillo
@@ -272,8 +360,10 @@ Siguiendo el **Principio de Responsabilidad Única**, tanto cada
 *servicio de aplicación* como cada *controlador,* tienen un **único
 punto de entrada**.
 
+</br>
+
 ``` TypeScript
-async run(request: CreateUserRequest): Promise\<void\> {
+async run(request: CreateUserRequest): Promise<void> {
 
   await this.ensureUserNotExist(request.email);
 
@@ -308,36 +398,52 @@ async run(request: CreateUserRequest): Promise\<void\> {
 }
 ```
 
+</br></br>
+
 Siguiendo el **Principio de Inversión de Control**, todas las
 dependencias de los servicios de aplicación y controladores, se inyectan
 en tiempo de creación del objeto a través del contenedor de dependencias
 el cual ha sido previamente configurado mediante su declaración en yaml.
 
-![deps](assets/deps_yaml.png?raw=true)
+</br>
+<p align="center">
+  <img src="assets/deps_yaml.png"/>
+</p>
+</br></br>
 
-En la anterior ilustración podemos observar la *responsabilidad única*
+En la anterior ilustración podemos observar la ***responsabilidad única***
 de cada ***controlador***, con la cual conseguimos una mejor
 mantenibilidad.
 
 Como último apunte, remarcar que no retornamos el Estado, dado que
-seguimos la filosofía **“*No news, good news”****.* En caso de que
+seguimos la filosofía ***“No news, good news”***. En caso de que
 exista algún error lanzaremos la excepción de dominio correspondiente.
+</br></br></br>
 
-# PRUEBAS
+# PRUEBAS 🧪
 
-## SISTEMA DE PRUEBAS
+</br></br>
+
+## SISTEMA DE PRUEBAS 🚧
 
 Para garantizar que el funcionamiento cumplía con los requerimientos
 hemos adoptado la metodología de desarrollo guiado por comportamiento
 [<span class="underline">BDD</span>](https://es.wikipedia.org/wikDesarrollo_guiado_por_comportamiento).
 
-![](/assets/atdd.png)
+
+</br></br>
+<p align="center">
+  <img src="assets/atdd.png"/>
+</p>
+</br></br>
 
 Dicha metodología consiste en seguir los siguientes pasos:
 
-- Por cada requisito funcional, generamos la prueba de aceptación,
-apoyándonos en Gherkins y Cucumber, la cual al lanzarla nos
-saldría en ROJO, por no tener nada implementado todavía.
+</br></br>
+
+📍 Por cada requisito funcional, generamos la prueba de aceptación, apoyándonos en Gherkins y Cucumber, la cual al lanzarla nos saldría en ROJO, por no tener nada implementado todavía.
+
+</br>
 
 ```gherkin
 Scenario: Publish a Job Opening
@@ -374,10 +480,16 @@ web",
 Then the response status code should be 201
 ```
 
-![test fail](assets/test_failed.png?raw=true)
+</br>
 
+<p align="center">
+  <img src="assets/test_failed.png"/>
+</p>
+</br></br>
 
-- Entramos en el ciclo de TDD, en el que creamos primero las pruebas unitarias, que al ejecutarlas saldrian en ROJO al no tener nada implementado.
+📍 Entramos en el ciclo de TDD, en el que creamos primero las pruebas unitarias, que al ejecutarlas saldrian en ROJO al no tener nada implementado.
+
+</br>
 
 ```javascript
 describe('JobOpening', () => {
@@ -399,10 +511,17 @@ describe('JobOpening', () => {
 });
 ```
 
-**NOTA:** 
+</br></br></br>
+
+<h3>💡 <strong>Aclaracion:</strong></h3>
+
+</br></br>
+
 > A la hora de construcción de los objetos hemos implementado el patrón creacional [<span class="underline">Object Mother<span>](https://martinfowler.com/bliki/ObjectMother.html) junto con el módulo [<span class="underline">Faker JS<span>](https://github.com/marak/Faker.js/) para la generación de los datos.
 
-> Las pruebas unitarias cumplen con el principio FIRST(Fast, Isolated, Repeatable, Self checking, Timely) Por ejemplo, en el caso de las pruebas de los servicios de aplicación ( casos de uso ) utilizamos dobles de test que reemplazan todo lo que tenga que ver con el Input/Output
+> Las pruebas unitarias cumplen con el principio FIRST(Fast, Isolated, Repeatable, Self checking, Timely) Por ejemplo, en el caso de las pruebas de los servicios de aplicación ( casos de uso ) utilizamos dobles de test que reemplazan todo lo que tenga que ver con el Input/Output.
+
+</br>
 
 ```javascript
 let repository: JobOpeningRepositoryMock;
@@ -430,21 +549,32 @@ repository.assertLastSavedJobOpeningIs(jobOpening);
 });
 ```
 
-- Implementamos lo más rápido posible para que salga en VERDE.
+</br></br>
 
-- Refactorizamos el código, mejorándolo si es necesario para que
+📍 Implementamos lo más rápido posible para que salga en VERDE.
+
+</br></br>
+
+📍 Refactorizamos el código, mejorándolo si es necesario para que
 quede más limpio y en caso de que siga siendo el resultado de las
 pruebas unitarias en VERDE saldríamos del ciclo TDD.
+ 
+</br></br>
+<p align="center">
+  <img src="assets/test_done.png"/>
+</p>
+</br></br>
 
-![test ok](assets/test_done.png?raw=true)
-
-- Volveriamos a correr la prueba de
+📍 Volveriamos a correr la prueba de
 aceptacion, que en este caso nos devuelve un todo ok en forma de
 color VERDE.
 
+</br></br></br>
 # FRONTEND
     
+</br></br>
 ## DISEÑO DE INTERFAZ
+
 
 ![](media/image18.png)
 
