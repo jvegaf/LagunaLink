@@ -1,8 +1,8 @@
-    
-
+</br>
 <p align="center">
 <img src="assets/app_logo.png"/>
-</p><br /><br /><br />
+</p>
+</br></br>
 
 <h1 align="center">LagunaLink</h1>
 <h3 align="center">
